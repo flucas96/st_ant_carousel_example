@@ -27,12 +27,12 @@ st.title("Carousel Component Example")
 st.sidebar.header("Carousel Configuration")
 
 autoplay = st.sidebar.checkbox("Autoplay", value=True)
-autoplay_speed = st.sidebar.number_input("Autoplay Speed", value=3000, min_value=1000, max_value=10000)
+autoplay_speed = st.sidebar.number_input("Autoplay Speed", value=3000, min_value=1, max_value=10000)
 st.sidebar.caption("Autoplay Speed sets the interval in milliseconds for automatic scrolling")
 
 dot_position = st.sidebar.selectbox("Dot Position", ["top", "bottom", "left", "right"])
 dots = st.sidebar.checkbox("Show Dots", value=True)
-animation_speed = st.sidebar.number_input("Animation Speed", value=500, min_value=100, max_value=2000)
+animation_speed = st.sidebar.number_input("Animation Speed", value=500, min_value=1, max_value=10000)
 st.sidebar.caption("Animation Speed sets the duration in milliseconds for transition animations")
 
 
