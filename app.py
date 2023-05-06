@@ -98,3 +98,23 @@ st.code(carousel_style, language="css")
 st.header("Content Code")
 st.code(default_content, language="python")
 
+st.header("Function Call")
+st.code(f"""
+st_ant_carousel(
+    content={default_content},
+    carousel_style={carousel_style},
+    autoplay={autoplay},
+    autoplaySpeed={autoplay_speed},
+    dotPosition="{dot_position}",
+    dots={dots},
+    waitForAnimate={waitForAnimate},
+    easing="{easing}",
+    effect="{effect}",
+    pauseOnDotsHover={pauseOnDotsHover},
+    pauseOnHover={pauseOnHover},
+    animationSpeed={animation_speed},
+    vertical={vertical},
+    adaptiveHeight={adaptive_height},
+)
+""")
+
