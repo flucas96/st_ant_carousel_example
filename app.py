@@ -6,14 +6,14 @@ st.set_page_config(layout="wide")
 
 def create_slide(text: str, background_color: str) -> Dict:
     return {
-        # "style": {
-        #     "display": "flex",
-        #     "alignItems": "center",
-        #     "justifyContent": "center",
-        #     "fontFamily": "Arial, sans-serif",
-        #     "background-color": background_color,
-        #     "padding": "30px",
-        # },
+        "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "fontFamily": "Arial, sans-serif",
+            "background-color": background_color,
+            "padding": "30px",
+        },
         "content": f"<h2 style='color: #FFFFFF; font-size: 30px; text-align: center;'>{text}</h2>",
     }
 
